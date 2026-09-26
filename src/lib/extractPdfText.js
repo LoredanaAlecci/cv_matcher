@@ -3,7 +3,7 @@ import * as pdfjsLib from "pdfjs-dist";
 // Cargamos el worker desde un CDN usando la versión exacta instalada,
 // en vez de importarlo del paquete local: evita problemas de resolución
 // de rutas con Vite que varían según la versión de pdfjs-dist.
-pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
 
 // Recibe un File (del <input type="file">) y devuelve el texto plano.
 export async function extractPdfText(file) {
