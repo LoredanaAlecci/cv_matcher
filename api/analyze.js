@@ -4,7 +4,7 @@
 // Usa la API de Gemini (Google AI Studio): tiene tier gratuito real,
 // sin tarjeta de crédito. Consigue tu key gratis en https://aistudio.google.com/apikey
 
-const GEMINI_MODEL = "gemini-1.5-flash";
+const GEMINI_MODEL = "gemini-flash-latest";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
